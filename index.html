@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Content.co Design Language</title>
+    <style>
+html {
+  background-color: #D2E5F8;
+}
+
+body {
+  /* Github */
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
+  /* Medium */
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  margin: 40px 40px;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  border-radius: 5px;
+}
+
+.column--half {
+  flex: 1 1 50%;
+}
+
+.column--full {
+  flex: 0 0 100%;
+}
+
+
+/* Buttons */
+
+.button {
+  padding: 1em;
+  border: 1px solid gainsboro;
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  
+  &:hover, &--hover {
+    background-color: rgba(71,74,71,.08)  
+  }
+  
+  &:active, &--active {
+    background-color: rgba(71,74,71,.2)  
+  }
+  
+}
+
+
+.card {
+  border-radius: 5px;
+  border: 1px solid #dbdadb;
+  margin: 10px;
+  
+}
+
+/*  Typogrpahy */
+
+.paragraph {
+  line-height: 1.3em;
+}
+
+.paragraph--card {
+  padding: 0 10px;
+}
+
+.paragraph--dark {
+  color: white;
+}
+
+
+.dl-headline--super {
+  color: #1590fc;
+  font-weight: 300;
+  font-size:3em;
+  line-height: 0em;
+}
+
+.dl-note--heading {
+  color: rgba(0,0,0,.4);
+  margin-top: -1.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.dl-section__title {
+  color: #1F7BDE;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.dl-section--flex {
+  display: flex;
+}
+
+.dl-swatch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  font-weight: 700;
+  & ~ & {
+    margin-left: 10px;
+  }
+}
+
+.dl-swatch--1F7BDE {
+  background-color: #1F7BDE;
+  color: white;
+}
+
+.dl-swatch--1590FC {
+  background-color: #1590FC;
+  color: white;
+}
+
+.dl-swatch--4A474A {
+  background-color: #4A474A;
+  color: white;
+}
+
+.dl-swatch--6F6D70 {
+  background-color: #6F6D70;
+  color: white;
+}
+
+.dl-swatch--929192 {
+  background-color: #929192;
+  color: white;
+}
+
+.dl-swatch--B7B5B7 {
+  background-color: #B7B5B7;
+  color: white;
+}
+
+.dl-swatch--DBDADB {
+  background-color: #DBDADB;
+  color: #6F6D70;
+}
+
+.dl-swatch--F6F6F6 {
+  background-color: #F6F6F6;
+  color: #6F6D70;
+}
+
+
+    </style>
+
+</head>
+<body>
+<h1 class="dl-headline--super">Content.co Design Language</h1>
+<p>This document will contain the design and the css for the different components in the <a href="https://content.cp">content.co</a> platform.</p>
+<div class="column--full">
+  <h3 class="dl-section__title">
+    Colors
+  </h3>
+  <div class="dl-section--flex">
+    <div class="dl-swatch dl-swatch--1F7BDE">
+      <p class="dl-swatch__text">1F7BDE</p>
+    </div>
+    <div class="dl-swatch dl-swatch--1590FC">
+      <p class="dl-swatch__text">1590FC</p>
+    </div>
+    <div class="dl-swatch dl-swatch--4A474A">
+      <p class="dl-swatch__text">4A474A</p>
+    </div> 
+    <div class="dl-swatch dl-swatch--6F6D70">
+      <p class="dl-swatch__text">6F6D70</p>
+    </div> 
+    <div class="dl-swatch dl-swatch--929192">
+      <p class="dl-swatch__text">929192</p>
+    </div> 
+    <div class="dl-swatch dl-swatch--B7B5B7">
+      <p class="dl-swatch__text">B7B5B7</p>
+    </div> 
+    <div class="dl-swatch dl-swatch--DBDADB">
+      <p class="dl-swatch__text">DBDADB</p>
+    </div> 
+    <div class="dl-swatch dl-swatch--F6F6F6">
+      <p class="dl-swatch__text">F6F6F6</p>
+    </div> 
+  </div>
+</div>
+
+<div class="column--half">
+  <h3 class="dl-section__title">
+    Headlines
+  </h3>
+  <h1>H1 Main Title</h1>
+  <p class="dl-note--heading">Helvetica XXem height XXem leading</p>
+  <h2>H2 Title</h2>
+  <p class="dl-note--heading">Helvetica XXem height XXem leading</p>
+  <h3>H3 Title</h3>
+  <p class="dl-note--heading">Helvetica XXem height XXem leading</p>
+  <h4>H4 Title</h4>
+  <p class="dl-note--heading">Helvetica XXem height XXem leading</p>
+
+</div>
+
+<div class="column--half">
+  <h3 class="dl-section__title">
+    Paragraph Text
+  </h3>
+  <p class="paragraph">
+    Content.co is a content marketing platform that supports brands across Asia. We help brands tell great stories and engage with their customers. We love to tell you more about it!
+  </p>
+  <div class="">
+  <p class="paragraph paragraph--dark">
+    Content.co is a content marketing platform that supports brands across Asia. We help brands tell great stories and engage with their customers. We love to tell you more about it!
+  </p>
+  </div>
+  
+  
+  
+</div>
+
+<div class="column--half">
+  <h3 class="dl-section__title">
+    Buttons
+  </h3>
+  <button class="button">
+    Button
+  </button>
+  <button class="button button--hover">
+    Hover Button
+  </button>
+  <button class="button button--active">
+    Hover Button
+  </button>
+</div>
+
+<div class="column--full">
+  <h3 class="dl-section__title">
+    Cards
+  </h3>
+  <div class="dl-section--flex">
+    <div class="card">
+      <img src="http://placehold.it/300x150">
+      <p class="paragraph paragraph--card">this is text</p>
+    </div>
+
+    <div class="card">
+      <img src="http://placehold.it/300x150">
+      <p class="paragraph paragraph--card">this is text</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
